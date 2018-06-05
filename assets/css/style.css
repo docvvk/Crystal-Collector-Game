@@ -1,0 +1,34 @@
+body{
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/WgeRenM/soft-and-subtle-background_4jkk-s_u__F0000.png");
+}
+
+img {
+    position: relative;
+    height: 8vw;
+    width: 8vw;
+    cursor: pointer;
+    display: block;
+    left: 1.5vw;
+    margin: 1vw 0;
+    
+}
+h1 {
+    font-weight: 700;
+    padding-top: 3.5vw;
+}
+
+
+@media (max-width: 992px) {
+    img {
+        height: 10vw;
+        width: 7vw;
+        margin-top: 2vw;
+    }
+}
+@media (max-width: 768px) {
+    img {
+        height: 10vw;
+        width: 6vw;
+        margin-top: 2vw;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>UNIT-4-GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+<body>
+        <h1 class="col-12 display-4 text-center text-light">CRYSTAL COLLECTOR</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="mt-4  p-4 col-md-5 col-sm-5 instructions bg-dark text-light">
+                    <p class="lead">You will be given a random number at the start of the game.</p>
+                    <p class="lead"> By clicking on any of the four crystals below you will add a specific amount of points to your total score.</p>
+                    <p class="lead">If your total score matches the random number, You Win!<br>If your score exceeds the random number, You Lose!</p>
+                    <p class="lead">Every time the game starts, each crystal will have a new value.</p>
+                    <p class="lead">Press SPACE to start the game!</p>
+                </div>
+                <div class="col-sm-2 col-md-2 crystals mt-4 bg-white">
+                    <img src="assets/images/crystal-blue.png" alt="Blue Crystal" class="num1">
+                    <img src="assets/images/crystal-green.png" alt="Green Crystal" class="num2">
+                    <img src="assets/images/crystal-red.jpeg" alt="Red Crystal" class="num3">
+                    <img src="assets/images/crystal-white.jpeg" alt="White Crystal" class="num4">
+                
+                </div>
+                <div class="col-md-5 col-sm-5 scores mt-4 text-center">
+                    <p class="randNum bg-dark text-light p-5">Random Number</p>
+                    <p class="wins bg-dark text-light p-4 mt-4">Wins:</p>
+                    <p class="loses bg-dark text-light p-4 mt-4">Loses:</p>
+                    <p class="text-light mt-4 p-2">Your Total Score is:</p>
+                    <p class="totalScore bg-dark text-light p-5 mt-4">Total Score</p>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
