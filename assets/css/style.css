@@ -14,8 +14,18 @@ img {
 }
 h1 {
     font-weight: 700;
-    padding-top: 3vw;
+    padding-top: 2vw;
 }
+.instructions {
+    margin-right: 10px;
+}
+.crystals {
+    margin-right: -5px;
+}
+.scores {
+    margin-right: -5px;
+}
+
 
 
 @media (max-width: 992px) {
@@ -48,6 +58,13 @@ h1 {
     img {
         height: 100px;
         width: 100px;
-        margin: 10px auto;
+        margin-right: -2vw;
+    }
+    .instructions {
+        margin-right: -10px;
+    }
+    .scores {
+        margin-right: -5px;
+    
     }
 }
