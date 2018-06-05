@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/WgeRenM/soft-and-subtle-background_4jkk-s_u__F0000.png");
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/7998868/thumb/1.jpg");
 }
 
 img {
@@ -14,21 +14,40 @@ img {
 }
 h1 {
     font-weight: 700;
-    padding-top: 3.5vw;
+    padding-top: 3vw;
 }
 
 
 @media (max-width: 992px) {
     img {
-        height: 10vw;
-        width: 7vw;
+        height: 100px;
+        width: 65px;
         margin-top: 2vw;
+    }
+    p.lead {
+        font-size: 18px;
     }
 }
 @media (max-width: 768px) {
     img {
-        height: 10vw;
-        width: 6vw;
+        height: 80px;
+        width: 42px;
         margin-top: 2vw;
+    }
+    p.lead {
+        font-size: 15px;
+    }
+}
+@media (max-width: 576px) {
+    .display-4 {
+        margin-top: 1vw;
+    }
+    .crystals {
+        display: flex;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
     }
 }
