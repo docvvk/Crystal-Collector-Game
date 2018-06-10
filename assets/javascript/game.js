@@ -23,26 +23,29 @@
     //lose image display none    
 
     $(function(){
+    
+    // Computer chooses random number betwen 19 and 120   
     var randomNumber = Math.floor(Math.random()*(120-19)+19);
-    console.log(randomNumber);
-
-    // $(".randNum").text("Random Number: " + randomNumber);
-
+    
+    //Four random numbers between 1 and 12 for four crystals
     var num1 = Math.floor(Math.random()*(12-1)+1);
     var num2 = Math.floor(Math.random()*(12-1)+1);
     var num3 = Math.floor(Math.random()*(12-1)+1);
     var num4 = Math.floor(Math.random()*(12-1)+1);
 
+    //Defining variables for scores
     var userTotal = 0;
     var wins = 0;
     var loses = 0;
 
+    //Defining game sounds
     var clickSound = new Audio("./assets/sounds/keyboard_tap.mp3");
     var wonSound = new Audio("./assets/sounds/you-win.wav");
     var lostSound = new Audio("./assets/sounds/you-lose.wav");
 
-    $(".totalScore").text("Total Score: " + userTotal);
+    $(".totalScore").text("Press SPACE to start the Game!");
 
+    // Adding functions    
     function resetGame() {
         randomNumber = Math.floor(Math.random()*(120-19)+19);
         $(".randNum").text("Random Number: " + randomNumber);
@@ -52,9 +55,10 @@
         num3 = Math.floor(Math.random()*(12-1)+1);
         num4 = Math.floor(Math.random()*(12-1)+1);
         
+        userTotal = 0;
+        
         $(".wins").text("Wins: 0");
         $(".loses").text("Loses: 0");
-        userTotal = 0;
         $(".totalScore").text(userTotal);
     };
     
@@ -82,43 +86,37 @@
         }
     };
     
-    // adding click events
+    // Adding click events for each crystal
     $(".num1").on("click", function() {
         clickSound.play();
         userTotal += num1;
         $(".totalScore").text(userTotal);
         check();
-        console.log("New total: ", userTotal);
     });
     $(".num2").on("click", function() {
         clickSound.play();
         userTotal += num2;
         $(".totalScore").text(userTotal);
         check();
-        console.log("New total: ", userTotal);
     })
     $(".num3").on("click", function() {
         clickSound.play();
         $(".totalScore").text(userTotal);
         check();
         userTotal += num3;
-        console.log("New total: ", userTotal);
     })
     $(".num4").on("click", function() {
         clickSound.play();
         $(".totalScore").text(userTotal);
         check();
         userTotal += num4;
-        console.log("New total: ", userTotal);
     })
 
+    //Press space to reset the game
     $(window).keypress(function (x) { 
         if (x.keyCode == 0 || x.keyCode == 32) {
-            console.log("Space");
             x.preventDefault();
             resetGame();
         }
      })
-
-
 });

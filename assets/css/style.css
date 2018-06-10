@@ -34,8 +34,8 @@ h1 {
         width: 65px;
         margin-top: 2vw;
     }
-    p.lead {
-        font-size: 18px;
+    li.lead {
+        font-size: 16px;
     }
 }
 @media (max-width: 768px) {
@@ -44,8 +44,12 @@ h1 {
         width: 42px;
         margin-top: 2vw;
     }
-    p.lead {
-        font-size: 15px;
+    li.lead {
+        font-size: 13px;
+    }
+    .instructions {
+        max-width: 100%;
+        padding-left: 10px;
     }
 }
 @media (max-width: 576px) {
